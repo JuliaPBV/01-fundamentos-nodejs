@@ -18,10 +18,10 @@ const server = http.createServer((req, res) => {
       email: "joanacarala@example.com",
     });
 
-    return res.end("Criação de usuário");
+    return res.writeHead(201).end();
   }
 
-  return res.end("Hello ignite");
+  return res.writeHend(404).end();
 });
 
 server.listen(3333);
